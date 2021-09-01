@@ -27,8 +27,35 @@
     <title>React App</title>
   </head>
   <body>
+    <!-- Jira Widget -->
     <script data-jsd-embedded data-key="ab63aad9-887c-4fdb-9694-c733efc3f21c" data-base-url="https://jsd-widget.atlassian.com" src="https://jsd-widget.atlassian.com/assets/embed.js"></script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!-- Jira Chat -->
+    <script type="text/javascript">
+    var spartezSupportChat = {
+        portal: 1,
+        cloud: {
+            jiraId: 'ecc484a3-8dfb-3cc4-a572-52e6d2acc48c',
+            jiraUrl: 'https://adplorer.atlassian.net',
+            urls: {
+                rest: 'https://chat-api.spartez-software.com',
+                ws: 'wss://chat-ws.spartez-software.com'
+            },
+        }
+        //meta: [ // optional, custom metadata to store in the issue created from conversation.
+        //    { render: true, name: "Value Name 1", value: val1 }, // "render" values will be displayed in the chat dashboard
+        //    { render: false, name: "Value Name 2", value: val2 },
+        //],
+        // delay: 100, // delay between page load and chat load in milliseconds
+        // container: 'spartez-support-chat-container', // ID of the page element that will be replaced by chat
+        // iconClass: '', // additional class added to the chat icon
+        // chatClass: '', // additional class added to the chat widget
+        // locale: 'en-us' // force a specified locale for displaying texts to the user instead of detecting it from the browser
+    }
+</script>
+<script type="text/javascript" src="https://chat-api.spartez-software.com/chat.js"></script>
+    <!-- /Jira Chat -->
+    
     <div id="root"></div>
     <!--
       This HTML file is a template.
